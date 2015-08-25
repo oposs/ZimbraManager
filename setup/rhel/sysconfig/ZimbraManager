@@ -1,7 +1,7 @@
 # The ZimbraManager configuration variables
 
 # Running User
-ZIMBRA_MANAGER_USER=zm_admin
+ZIMBRA_MANAGER_USER=root
 
 # Logfile directory
 ZIMBRA_MANAGER_LOGDIR=/var/log/ZimbraManager
