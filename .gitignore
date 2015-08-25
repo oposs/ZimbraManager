@@ -18,3 +18,4 @@ zm.sublime-workspace
 internal-test/
 *~
 thirdparty/
+vagrant/build/.vagrant
