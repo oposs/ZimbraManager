@@ -4,16 +4,14 @@
 
 # iam-mailserver-interface
 for module in \
-  XML::Compile::WSDL11 \
-  XML::Compile::SOAP11 \
-  XML::Compile::Transport::SOAPHTTP \
-  Net::HTTP \
-  Mojolicious \
-  LWP::Protocol::https \
-  IO::Socket::SSL \
-  HTTP::CookieJar \
+  XML::Compile::WSDL11@3.03 \
+  XML::Compile::SOAP11@3.10 \
+  XML::Compile::Transport::SOAPHTTP@3.10 \
+  Net::HTTP@6.09 \
+  Mojolicious@6.17 \
+  LWP::Protocol::https@6.06 \
+  IO::Socket::SSL@2.017 \
+  HTTP::CookieJar@0.007 \
 ; do
   perlmodule $module
 done
-
-        
