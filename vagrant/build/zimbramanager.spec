@@ -14,7 +14,7 @@ Source0:        https://github.com/oposs/ZimbraManager/archive/v1.5.1.tar.gz
 BuildRoot:      %{_tmppath}/%{zimbramanagername}-%{release}-root-%(%{__id_u} -n)
 AutoReq:        no
 AutoProv:       no
-#requires:      libxml2-devel.x86_64
+requires:       perl-opt 
 
 
 # this is necessary to prevent the scanning for rpaths in built libs
