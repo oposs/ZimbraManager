@@ -5,7 +5,7 @@ if [ -d build ]; then
     vagrant up
     vagrant ssh -c /vagrant/make.sh
     vagrant rsync-back
-    #vagrant destroy
+    vagrant destroy
     cd ..
 fi
 if [ -d build/RPMS ]; then
