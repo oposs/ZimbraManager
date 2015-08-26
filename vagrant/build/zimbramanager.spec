@@ -3,7 +3,7 @@
 %define zimbramanagerpath /opt/oss/ZimbraManager-%{zimbramanagerver}
 %define zimbra-user hea_diu2
 
-Name:           ZimbraManager 
+Name:           zimbramanager 
 Version:        1.5.1
 Release:        2.el6_6.6
 Summary:        Zimbra commandline administration with Perl and SOAP 
@@ -15,7 +15,7 @@ Packager:       OETIKER+PARTNER AG Manuel Oetiker <http://www.oetiker.ch>
 BuildRoot:      %{_tmppath}/%{zimbramanagername}-%{release}-root-%(%{__id_u} -n)
 AutoReq:        no
 AutoProv:       no
-requires:       perl-opt 
+requires:       perl-opt = 5.22.0
 
 
 # this is necessary to prevent the scanning for rpaths in built libs

@@ -32,7 +32,7 @@ sudo yum -y install libxml2-devel.x86_64
 
 # install perl
 if ! [ -d /opt/oss/perl ];then
-  sudo rpm -i /vagrant/perl-opt-5.22.0-1.el6.x86_64.rpm
+  sudo rpm -i /vagrant/perl-opt-5.22.0-2.el6_6.6.x86_64.rpm
 fi
 
 # create an RPM build tree
