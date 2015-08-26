@@ -5,12 +5,13 @@
 
 Name:           ZimbraManager 
 Version:        1.5.1
-Release:        1.el6
+Release:        2.el6_6.6
 Summary:        Zimbra commandline administration with Perl and SOAP 
 Group:          misc
 License:        GPLv1+
 URL:            https://github.com/oposs/ZimbraManager 
 Source0:        https://github.com/oposs/ZimbraManager/archive/v1.5.1.tar.gz 
+Packager:       OETIKER+PARTNER AG Manuel Oetiker <http://www.oetiker.ch>
 BuildRoot:      %{_tmppath}/%{zimbramanagername}-%{release}-root-%(%{__id_u} -n)
 AutoReq:        no
 AutoProv:       no
