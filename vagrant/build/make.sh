@@ -13,7 +13,7 @@ set -e
 
 SCRIPTDIR=$(dirname $0)
 SPECNAME="zimbramanager.spec"
-export PATH=/opt/oss/perl/bin:${PATH}
+export PATH=/opt/oss/perl-5.22.0/bin:${PATH}
 
 if [[ "$(whoami)" == "root" ]]; then
   echo "Please don't build RPMs as root!"
@@ -31,7 +31,7 @@ fi
 sudo yum -y install libxml2-devel.x86_64
 
 # install perl
-if ! [ -d /opt/oss/perl ];then
+if ! [ -d /opt/oss/perl-5.22.0 ];then
   sudo rpm -i /vagrant/perl-opt-5.22.0-2.el6_6.6.x86_64.rpm
 fi
 

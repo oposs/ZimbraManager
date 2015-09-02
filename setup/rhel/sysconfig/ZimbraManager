@@ -10,4 +10,4 @@ ZIMBRA_MANAGER_LOGDIR=/var/log/ZimbraManager
 ZIMBRA_MANAGER_LOGLEVEL=error
 
 # Change Path
-PATH=/opt/oss/perl/bin:$PATH:$HOME/bin
+PATH=/opt/oss/perl-5.22.0/bin:$PATH:$HOME/bin

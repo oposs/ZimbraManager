@@ -1,16 +1,16 @@
-%define zimbramanagerver 1.5.1
+%define zimbramanagerver 1.5.2
 %define zimbramanagername ZimbraManager-%{zimbramanagerver}
 %define zimbramanagerpath /opt/oss/ZimbraManager-%{zimbramanagerver}
 %define zimbra-user hea_diu2
 
 Name:           zimbramanager 
-Version:        1.5.1
-Release:        2.el6_6.6
+Version:        %{zimbramanagerver} 
+Release:        1.el6_6.6
 Summary:        Zimbra commandline administration with Perl and SOAP 
 Group:          misc
 License:        GPLv1+
 URL:            https://github.com/oposs/ZimbraManager 
-Source0:        https://github.com/oposs/ZimbraManager/archive/v1.5.1.tar.gz 
+Source0:        https://github.com/oposs/ZimbraManager/archive/v%{zimbramanagerver}.tar.gz 
 Packager:       OETIKER+PARTNER AG Manuel Oetiker <http://www.oetiker.ch>
 BuildRoot:      %{_tmppath}/%{zimbramanagername}-%{release}-root-%(%{__id_u} -n)
 AutoReq:        no
@@ -89,7 +89,11 @@ fi
 :
 
 %changelog
-* Tue Aug 25 2015 Manuel Oetiker <manuel@oetiker.ch> 1.5
-- Initial RPM release
+* Wed Sep 02 2015 Manuel Oetiker <manuel@oetiker.ch> 1.5.1 -> 1.5.2
+- add perl path 
+
 * Tue Aug 25 2015 Manuel Oetiker <manuel@oetiker.ch> 1.5 -> 1.5.1
 - Add module versions 
+
+* Tue Aug 25 2015 Manuel Oetiker <manuel@oetiker.ch> 1.5
+- Initial RPM release
